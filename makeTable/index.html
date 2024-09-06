@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planets Data Table</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Planets data</h1>
+    <table>
+        <caption>Data about the planets of our solar system (Planetary facts taken from <a href="https://nssdc.gsfc.nasa.gov/planetary/factsheet/">Nasa's Planetary Fact Sheet - Metric)</a>.</caption>
+        <thead>
+            <tr>
+            <th colspan="2"></th>
+            <th class="headers">Name</th>
+            <th class="headers">Mass</th>
+            <th class="headers">Diameter</th>
+            <th class="headers">Density</th>
+            <th class="headers">Gravity</th>
+            <th class="headers">Length of Day</th>
+            <th class="headers">Distance from Sun</th>
+            <th class="headers">Mean temperature</th>
+            <th class="headers">Number of moons</th>
+            <th class="headers">Notes</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+             <td class="category" data-cell ="category" rowspan="4" colspan="2">Terrestrial planets</td>
+            <td class="name" data-cell ="name">Mercury</td>
+            <td data-cell="Mass">0.330</td>
+            <td data-cell ="Diameter">4,879</td>
+            <td data-cell ="Density">5427</td>
+            <td data-cell="Gravity">3.7</td>
+            <td data-cell="Length of day">4222.6</td>
+            <td data-cell="Distance from Sun">57.9</td>
+            <td data-cell="Mean temperature">167</td>
+            <td data-cell="Number of moons">0</td>
+            <td data-cell="Notes">Closest to the Sun</td>
+        </tr>
+        <tr>
+            <td class="name" data-cell ="name">Venus</td>
+            <td data-cell="Mass">4.87</td>
+            <td data-cell ="Diameter">12,104</td>
+            <td data-cell ="Density">5243</td>
+            <td data-cell="Gravity">8.9</td>
+            <td data-cell="Length of day">2802.0</td>
+            <td data-cell="Distance from Sun">108.2</td>
+            <td data-cell="Mean temperature">464</td>
+            <td data-cell="Number of moons">0</td>
+            <td data-cell="Notes"></td>
+            </tr>
+        <tr>
+            <td class="name" data-cell ="name">Earth</td>
+            <td data-cell="Mass">5.97</td>
+            <td data-cell ="Diameter">12,756</td>
+            <td data-cell ="Density">5514</td>
+            <td data-cell="Gravity">9.8</td>
+            <td data-cell="Length of day">24.0</td>
+            <td data-cell="Distance from Sun">149.6</td>
+            <td data-cell="Mean temperature">15</td>
+            <td data-cell="Number of moons">1</td>
+            <td data-cell="Notes">Our world</td>
+            </tr>
+            <tr>
+                <td class="name" data-cell ="name">Mars</td>
+                <td data-cell="Mass">0.642</td>
+                <td data-cell ="Diameter">6,792</td>
+                <td data-cell ="Density">3933</td>
+                <td data-cell="Gravity">3.7</td>
+                <td data-cell="Length of day">24.7</td>
+                <td data-cell="Distance from Sun">227.9</td>
+                <td data-cell="Mean temperature">-65</td>
+                <td data-cell="Number of moons">2</td>
+                <td data-cell="Notes">The red planet</td>
+                </tr>
+                <tr>
+                    <td class="category" data-cell ="category" rowspan="4" colspan="1">Jovian Planets</td>
+                    <td class="category" data-cell ="category" rowspan="2" colspan="1">Gas giants</td>
+                    <td class="name" data-cell ="name">Jupiter</td>
+                    <td data-cell="Mass">1898</td>
+                    <td data-cell ="Diameter">142,987</td>
+                    <td data-cell ="Density">1326</td>
+                    <td data-cell="Gravity">32.1</td>
+                    <td data-cell="Length of day">9.9</td>
+                    <td data-cell="Distance from Sun">778.6</td>
+                    <td data-cell="Mean temperature">-110</td>
+                    <td data-cell="Number of moons">67</td>
+                    <td data-cell="Notes">The largest planet</td>
+               </tr>
+               <tr>
+                <td class="name" data-cell ="name">Saturn</td>
+                <td data-cell="Mass">568</td>
+                <td data-cell ="Diameter">120,536</td>
+                <td data-cell ="Density">687</td>
+                <td data-cell="Gravity">9.0</td>
+                <td data-cell="Length of day">10.7</td>
+                <td data-cell="Distance from Sun">1433.5</td>
+                <td data-cell="Mean temperature">-140</td>
+                <td data-cell="Number of moons">62</td>
+                <td data-cell="Notes"></td>
+           </tr>
+            <tr>
+                <td class="category" data-cell ="category" rowspan="2" colspan="1">Ice giants</td>
+                <td class="name" data-cell ="name">Uranus</td>
+                <td data-cell="Mass">86.8</td>
+                <td data-cell ="Diameter">51,118</td>
+                <td data-cell ="Density">1271</td>
+                <td data-cell="Gravity">8.7</td>
+                <td data-cell="Length of day">17.2</td>
+                <td data-cell="Distance from Sun">2872.5</td>
+                <td data-cell="Mean temperature">-195</td>
+                <td data-cell="Number of moons">27</td>
+                <td data-cell="Notes"></td>
+        </tr>
+            <tr>
+                <td class="name" data-cell ="name">Neptune</td>
+                <td data-cell="Mass">102</td>
+                <td data-cell ="Diameter">49,528</td>
+                <td data-cell ="Density">1638</td>
+                <td data-cell="Gravity">11.0</td>
+                <td data-cell="Length of day">16.1</td>
+                <td data-cell="Distance from Sun">4495.1</td>
+                <td data-cell="Mean temperature">-200</td>
+                <td data-cell="Number of moons">14</td>
+                <td data-cell="Notes"></td>
+        </tr>
+        <tr>
+            <td class="category" data-cell ="category" rowspan="1" colspan="2">Terrestrial planets</td>
+            <td class="name" data-cell ="name">Pluto</td>
+            <td data-cell="Mass">0.0146</td>
+            <td data-cell ="Diameter">2,370</td>
+            <td data-cell ="Density">2095</td>
+            <td data-cell="Gravity">0.7</td>
+            <td data-cell="Length of day">153.3</td>
+            <td data-cell="Distance from Sun">5906.4</td>
+            <td data-cell="Mean temperature">-225</td>
+            <td data-cell="Number of moons">5</td>
+            <td data-cell="Notes">Declassified as a planet in 2006, but this <a href="https://www.usatoday.com/story/tech/2014/10/02/pluto-planet-solar-system/16578959/">remains controversial.</a></td>
+        </tr>
+        </tbody>
+    </table>
+</body>
+</html>
