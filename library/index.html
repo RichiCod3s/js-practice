@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <script src="library.js" defer></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="container">
+        <H1>Library</H1>
+        <p>Click the 'New Book' Button to add you book to the library</p>
+        <button id="open-form-btn">New Book</button>
+    <dialog class="modal" id="modal">
+        <form class="form" method="dialog">
+            <div>
+                <label for="author">Author</label>
+                <input type="text" id="author">
+            </div>
+            <div>
+                <label for="title">Title</label>
+                <input type="text" id="title">
+            </div>
+            <div>
+                <label for="pages">Pages</label>
+                <input type="number" id="pages">
+            </div>
+            <div>
+                <input type="submit" id="submit" value="Submit">
+                <button id="close-form-btn">Close</button>
+            </div>
+        </form>
+    </dialog>
+    <div id="book-container"></div>
+  
+    </div>
+    
+</body>
+</html>

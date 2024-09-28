@@ -1,0 +1,49 @@
+html,body{
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    overflow: hidden; 
+    background-color: rgb(37, 47, 82);
+}
+h1, p {
+    margin: 0 0 1rem 0;
+    padding: 0;
+}
+#modal::backdrop{
+    background-color: purple;
+    opacity: .2;
+}
+#container{
+  
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+}
+
+
+#book-container{
+ 
+}
+#book-container p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: 'Courier New', Courier, monospace;
+    font-size: larger;
+    gap: 5;
+}
+
+#book-container button{
+   background-color: rgb(255, 0, 98);
+   margin: 0.5rem;
+    
+}
+#open-form-btn{
+background-color: rgb(172, 72, 92);
+border: 30px;
+}
