@@ -9,7 +9,7 @@ function Book(author, title, pages, read){
 }
 
 Book.prototype.toString = function() {
-    return `Title: ${this.title}, Author: ${this.author}, Pages: ${this.pages}`;
+    return `Title: ${this.title}<br> Author: ${this.author}<br> Pages: ${this.pages}`;
 };
 
 Book.prototype.toggleReadStatus = function() {
@@ -51,9 +51,14 @@ function displayBooks(){
         myLibrary[i].toggleReadStatus(); // Toggle read status
         displayBooks();
     });
+
+    const div = document.createElement("div");
+    div.classList.add("card-btn-div");
+
     // add buttons to p
-    para.appendChild(toggleReadButton);
-    para.append(removeButton);
+    div.appendChild(toggleReadButton);
+    div.append(removeButton);
+    para.append(div);
     //add p to div
     bookContainer.append(para);
     
@@ -81,6 +86,7 @@ const submit = document.querySelector("#submit");
     const title = document.querySelector("#title").value;
     const pages = document.querySelector("#pages").value;
    let book = new Book(author, title, pages);
+   
     addBookToLibrary(book);
     
     //clear the text in the forms
@@ -95,3 +101,12 @@ const submit = document.querySelector("#submit");
  closeForm.addEventListener("click", function(){
     modal.close();
    });
+
+  let  book1 = new Book("Noal Hararri","Sapians", 123);
+  let  book2 = new Book("Mario Puzo","The Godfather", 236);  
+  let  book3 = new Book("Mr Kipling","The Junglebook", 115);  
+
+   addBookToLibrary(book1);
+   addBookToLibrary(book2);
+   addBookToLibrary(book3);
+   displayBooks();
